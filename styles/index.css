@@ -1,0 +1,76 @@
+main {
+    max-width:800px; height:1000px; background-color: #AEEFFF;
+    margin:30px auto; border-radius: 15px; overflow:hidden;
+}
+main .title {
+    background-color:#E74C3C; height:100px;
+}
+main .title h1 {
+    font-weight:500; line-height:100px;
+    font-size:2.25rem; text-align: center; color:#fff
+}
+main .input_wrap {
+    padding:50px;
+    display:flex; flex-flow:row nowrap; gap:50px;
+}
+main .input_wrap #input_text {
+    width:600px; height:50px; padding:20px; border-radius:15px;
+}
+main .input_wrap #plus {
+    font-size:1.25rem; border-radius:15px;
+    width:50px; height:50px; background-color:#FFF5A5;
+    transition:filter 0.2s ease;
+}
+main .input_wrap #plus:hover {
+    filter:invert(1);
+}
+main .list_wrap {
+    padding:30px;
+}
+main .list_wrap .list {
+    background-color:#B7F2D5; max-width:700px;
+    width:100vw; height:650px;
+    margin:0 auto; padding:100px;
+}
+main .list_wrap .list li {
+    display:flex; flex-flow:row nowrap; gap:30px; justify-content: center; align-items: center;
+}
+main .list_wrap .list li #stamp {
+    width:50px; height:50px;
+}
+main .list_wrap .list li .del {}
+main .list_wrap .list li .input_value{
+    width:420px; height:30px;
+    background-color:#D2FBA4; padding:0 20px;
+}
+@media screen and (max-width:420px) {
+    main {
+        height:700px; margin:0 auto;
+    }
+    main .title {
+        height:70px;
+    }
+    main .title h1 {
+        line-height:70px;
+        font-size:1.5rem;
+    }
+    main .input_wrap {
+        justify-content:center; align-items: center;
+        gap:30px; padding:30px;
+    }
+    main .input_wrap #input_text {
+        font-size:0.75rem;
+        height:30px; width:300px;
+    }
+    main .input_wrap #plus {
+        font-size:1rem; height:30px;
+        width:30px;
+    }
+    main .list_wrap {
+        padding:10px;
+    }
+    main .list_wrap .list {
+        width:300px; height:480px;
+        padding:50px;
+    }
+}
